@@ -10,7 +10,7 @@ name: GitHubActions
 
 env:
   APPLICATION_NAME: "YouTube Client"
-  DEPLOY_PACKAGE_NAME: "youtube-client-ver${{ github.sha }}"
+  DEPLOY_PACKAGE_NAME: "youtube-client-ver-${{ github.sha }}"
 
 on:
   push:
@@ -19,15 +19,30 @@ on:
     branches: [development]
 
 jobs:
+  clone_repo:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: List current folder 
+        run: ls -la
+        
+      - name: clone repo
+        uses: action/chekout@v19
+     
   install:
     runs-on: ubuntu-latest
+    needs: [clone_repo]
      
     steps:
-     - name: install packages
-       run : echo "installing packages"
+      - name: List current folder 
+        run: ls -la
+
+      - name: install packages
+        run : echo "installing packages"
     
   test:
     runs-on: ubuntu-latest
+    needs: [install]
 
     steps:
       - name: run tests
