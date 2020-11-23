@@ -27,7 +27,7 @@ jobs:
         run: ls -la
         
       - name: clone repo
-        uses: action/chekout@v1
+        uses: action/checkout@v1
      
   install:
     runs-on: ubuntu-latest
