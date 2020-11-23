@@ -28,7 +28,10 @@ jobs:
         
       - name: clone repo
         uses: actions/checkout@v1
-     
+        
+      - name: List current folder 
+        run: ls -la
+  
   install:
     runs-on: ubuntu-latest
     needs: [clone_repo]
