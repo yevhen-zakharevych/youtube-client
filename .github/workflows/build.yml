@@ -47,7 +47,7 @@ jobs:
         run: npm run lint
 
       - name: Archive build
-        if: succes()
+        if: success()
         uses: actions/upload-artifact@v1
         with: 
           name: delploy_dist
