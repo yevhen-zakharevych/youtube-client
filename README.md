@@ -1,4 +1,4 @@
-# YoutubeClient
+# [YoutubeClient](https://yevhen-zakharevych.github.io/youtube-client/)
 
 [![Build status](https://github.com/yevhen-zakharevych/youtube-client/workflows/Build/badge.svg)](https://github.com/yevhen-zakharevych/youtube-client/actions)
 
