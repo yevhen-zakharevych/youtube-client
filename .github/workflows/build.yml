@@ -50,7 +50,7 @@ jobs:
         if: success()
         uses: actions/upload-artifact@v1
         with: 
-          name: delploy_dist
+          name: deploy_dist
           path: dist
   
   deploy:
