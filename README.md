@@ -1,4 +1,4 @@
-# <a href="https://yevhen-zakharevych.github.io/youtube-client/" target="_blank">YouTube Client</a>
+# [YouTube Client](https://yevhen-zakharevych.github.io/youtube-client/)
 
 [![Build status](https://github.com/yevhen-zakharevych/youtube-client/workflows/Build/badge.svg)](https://github.com/yevhen-zakharevych/youtube-client/actions)
 
