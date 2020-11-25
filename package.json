@@ -5,13 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:prod": "ng build --prod --sourceMap=false --base-href=https://yevhen-zakharevych.github.io/youtube-client/",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "clean": "rimraf ./dist",
-    "build:ci": "npm run clean && npm run test:ci && npm run build:prod"
+    "build:ci": "npm run clean && npm run build:prod "
   },
   "private": true,
   "dependencies": {
