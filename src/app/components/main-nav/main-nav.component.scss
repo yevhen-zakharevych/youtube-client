@@ -22,3 +22,15 @@
 .menu-open-button {
   margin-right: 20px;
 }
+
+.search-block {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}

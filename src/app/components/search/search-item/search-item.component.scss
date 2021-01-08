@@ -1,0 +1,27 @@
+:host {
+  margin: 2rem;
+  max-width: 400px;
+}
+
+.mat-card-image {
+  max-width: 400px;
+}
+
+.item-statistics {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.statictics-count {
+  display: flex;
+  align-items: center;
+  margin-left: 0.4rem;
+  margin-right: 0.8rem;
+}
+
+.statistics-actions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.8rem !important;
+}

@@ -1,0 +1,39 @@
+<mat-card>
+  <img
+    mat-card-image
+    [src]="url"
+    [alt]="title"
+    [title]="title">
+  <mat-card-content class="item-statistics">
+    <span class="material-icons">
+      visibility
+    </span>
+    <span class="statictics-count">
+      {{ viewCount }}
+    </span>
+    <span class="material-icons">
+      thumb_up
+    </span>
+    <span class="statictics-count">
+      {{ likeCount }}
+    </span>
+    <span class="material-icons">
+      thumb_down
+    </span>
+    <span class="statictics-count">
+      {{ dislikeCount }}
+    </span>
+    <span class="material-icons">
+      mode_comment
+    </span>
+    <span class="statictics-count">
+      {{ commentCount }}
+    </span>
+  </mat-card-content>
+  <mat-card-content>
+    <mat-card-title>{{ title }}</mat-card-title>
+  </mat-card-content>
+  <mat-card-actions class="statistics-actions">
+    <button mat-raised-button color="primary">More</button>
+  </mat-card-actions>
+</mat-card>

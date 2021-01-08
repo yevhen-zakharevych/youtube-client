@@ -4,15 +4,23 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MaterialModule } from './material/material.module';
+import { SearchResultsComponent } from './components/search/search-results/search-results.component';
+import { SearchItemComponent } from './components/search/search-item/search-item.component';
+import { LogoComponent } from './components/header/logo/logo.component';
+import { SearchInputComponent } from './components/header/search-input/search-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavComponent
+    MainNavComponent,
+    SearchResultsComponent,
+    SearchItemComponent,
+    LogoComponent,
+    SearchInputComponent
   ],
   imports: [
     BrowserModule,
