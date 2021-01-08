@@ -8,7 +8,6 @@ import { response } from '../../../MOCK.response';
 describe('SearchItemComponent', () => {
   let component: SearchItemComponent;
   let fixture: ComponentFixture<SearchItemComponent>;
-  let searchItem: SearchItemComponent;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
