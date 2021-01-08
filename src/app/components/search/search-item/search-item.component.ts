@@ -16,6 +16,7 @@ export class SearchItemComponent implements OnInit {
   public likeCount = '0';
   public dislikeCount = '0';
   public commentCount = '0';
+  public date = '';
 
   constructor() { }
 
@@ -26,5 +27,6 @@ export class SearchItemComponent implements OnInit {
     this.likeCount = this.item.statistics.likeCount;
     this.dislikeCount = this.item.statistics.dislikeCount;
     this.commentCount = this.item.statistics.commentCount;
+    this.date = this.item.snippet.publishedAt;
   }
 }

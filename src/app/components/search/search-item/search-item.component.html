@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card [appPublicationStatus]="date">
   <img
     mat-card-image
     [src]="url"
@@ -31,7 +31,7 @@
     </span>
   </mat-card-content>
   <mat-card-content>
-    <mat-card-title>{{ title }}</mat-card-title>
+    <mat-card-title class="title" [title]="title">{{ title }}</mat-card-title>
   </mat-card-content>
   <mat-card-actions class="statistics-actions">
     <button mat-raised-button color="primary">More</button>

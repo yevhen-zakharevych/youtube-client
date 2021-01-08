@@ -12,6 +12,7 @@ import { SearchResultsComponent } from './components/search/search-results/searc
 import { SearchItemComponent } from './components/search/search-item/search-item.component';
 import { LogoComponent } from './components/header/logo/logo.component';
 import { SearchInputComponent } from './components/header/search-input/search-input.component';
+import { PublicationStatusDirective } from './directives/publication-status/publication-status.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchInputComponent } from './components/header/search-input/search-in
     SearchResultsComponent,
     SearchItemComponent,
     LogoComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    PublicationStatusDirective
   ],
   imports: [
     BrowserModule,

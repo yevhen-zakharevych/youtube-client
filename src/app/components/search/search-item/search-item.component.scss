@@ -25,3 +25,9 @@
   justify-content: center;
   padding-bottom: 0.8rem !important;
 }
+
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
