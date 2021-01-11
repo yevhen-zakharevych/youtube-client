@@ -1,12 +1,16 @@
-<form (submit)="onSubmit($event)">
-  <mat-form-field>
-    <input matInput autocomplete="off">
-  </mat-form-field>
-  <button
-    mat-raised-button
-    color="warn"
-    type="submit"
-    class="search-button">
-      Search
-  </button>
-</form>
+<div class="search-actions">
+  <form
+    (submit)="onSubmit($event)"
+    class="search-form">
+    <mat-form-field>
+      <input matInput autocomplete="off">
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="warn"
+      type="submit"
+      class="search-button">
+        Search
+    </button>
+  </form>
+</div>

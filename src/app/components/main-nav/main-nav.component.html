@@ -34,6 +34,14 @@
       <div class="search-block">
         <app-logo></app-logo>
         <app-search-input></app-search-input>
+        <button
+          mat-mini-fab
+          color="warn"
+          type="button"
+          class="sort-bar-button"
+          (click)="toggleSortBar()">
+            <mat-icon>sort</mat-icon>
+        </button>
       </div>
       <div class="auth">
         <span>
@@ -43,6 +51,9 @@
           person
         </span>
       </div>
+    </mat-toolbar>
+    <mat-toolbar color="primary" *ngIf="showSortBar">
+      <app-sort-bar></app-sort-bar>
     </mat-toolbar>
     <ng-content>
     </ng-content>

@@ -1,0 +1,19 @@
+:host {
+  width: 100%;
+}
+
+.sorting-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .sort-input {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}

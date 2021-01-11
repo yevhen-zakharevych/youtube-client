@@ -13,6 +13,7 @@ import { SearchItemComponent } from './components/search/search-item/search-item
 import { LogoComponent } from './components/header/logo/logo.component';
 import { SearchInputComponent } from './components/header/search-input/search-input.component';
 import { PublicationStatusDirective } from './directives/publication-status/publication-status.directive';
+import { SortBarComponent } from './components/header/sort-bar/sort-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PublicationStatusDirective } from './directives/publication-status/publ
     SearchItemComponent,
     LogoComponent,
     SearchInputComponent,
-    PublicationStatusDirective
+    PublicationStatusDirective,
+    SortBarComponent
   ],
   imports: [
     BrowserModule,

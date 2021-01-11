@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-nav.component.scss']
 })
 export class MainNavComponent {
+  public showSortBar = false;
+
   constructor() {}
+
+  toggleSortBar(): void {
+    this.showSortBar = !this.showSortBar;
+  }
 }
