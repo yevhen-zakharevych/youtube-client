@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchItem } from 'src/app/models/search-item.model';
-import { SearchResponse } from 'src/app/models/search-response.model';
-import { response } from '../../../MOCK.response';
+import { SearchItem } from 'src/app/core/models/search-item.model';
+import { SearchResponse } from 'src/app/core/models/search-response.model';
+import { response } from '../../../../MOCK.response';
 
 @Component({
   selector: 'app-search-results',
