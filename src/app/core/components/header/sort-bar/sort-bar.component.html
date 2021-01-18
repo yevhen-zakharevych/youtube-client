@@ -2,20 +2,25 @@
   <span class="sorting-actions-title">Sorting by:</span>
   <button
     mat-stroked-button
-    color="accent">
+    color="accent"
+    (click)="sortHandler('date')">
       date
   </button>
   <button
     mat-stroked-button
-    color="accent">
+    color="accent"
+    (click)="sortHandler('views')">
       count of views
   </button>
-  <button
-    mat-stroked-button
-    color="accent">
-      by word or sentence
-  </button>
-  <mat-form-field class="sort-input">
-    <input matInput autocomplete="off">
-  </mat-form-field>
+  <form (submit)="filterHandler($event, filter.value)">
+    <button
+      mat-stroked-button
+      color="accent"
+      type="submit">
+        by word or sentence
+    </button>
+    <mat-form-field class="sort-input">
+      <input matInput autocomplete="off" #filter />
+    </mat-form-field>
+  </form>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Sort } from '../../models/sort.model';
 
 @Component({
   selector: 'app-main-nav',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class MainNavComponent {
   public showSortBar = false;
+  public sort: Sort = {
+    key: '',
+    order: 1
+  };
+
+  public filter = '';
 
   constructor() {}
 

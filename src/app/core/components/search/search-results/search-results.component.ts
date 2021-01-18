@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SearchItem } from 'src/app/core/models/search-item.model';
 import { SearchResponse } from 'src/app/core/models/search-response.model';
+import { Sort } from 'src/app/core/models/sort.model';
 import { response } from '../../../../MOCK.response';
 
 @Component({
@@ -10,15 +11,15 @@ import { response } from '../../../../MOCK.response';
 })
 export class SearchResultsComponent implements OnInit {
 
-  public searchResponse: SearchResponse = response;
+  @Input() sort!: Sort;
+  @Input() filter!: string;
+
+  public searchRespfonse: SearchResponse = response;
   public searchResults: Array<SearchItem> = response.items;
 
-  constructor() {
-
-   }
+  constructor() {}
 
   ngOnInit(): void {
 
   }
-
 }

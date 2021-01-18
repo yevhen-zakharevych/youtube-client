@@ -13,7 +13,8 @@ const components = [
   SearchInputComponent,
   SortBarComponent,
   SearchItemComponent,
-  SearchResultsComponent
+  SearchResultsComponent,
+  MainNavComponent
 ];
 
 @NgModule({

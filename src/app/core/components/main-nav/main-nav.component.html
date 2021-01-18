@@ -53,9 +53,10 @@
       </div>
     </mat-toolbar>
     <mat-toolbar color="primary" *ngIf="showSortBar">
-      <app-sort-bar></app-sort-bar>
+      <app-sort-bar
+        (sort)="sort=$event"
+        (filter)="filter=$event"></app-sort-bar>
     </mat-toolbar>
-    <ng-content>
-    </ng-content>
+    <app-search-results [sort]="sort" [filter]="filter"></app-search-results>
   </mat-sidenav-content>
 </mat-sidenav-container>

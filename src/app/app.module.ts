@@ -7,10 +7,12 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AppComponent } from './app.component';
 
 import { CoreModule } from './core/core.module';
+import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
