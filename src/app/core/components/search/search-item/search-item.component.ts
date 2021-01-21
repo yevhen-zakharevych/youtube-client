@@ -18,8 +18,6 @@ export class SearchItemComponent implements OnInit {
   public commentCount = '0';
   public date = '';
 
-  constructor() { }
-
   ngOnInit(): void {
     this.url = this.item.snippet.thumbnails.maxres.url;
     this.title = this.item.snippet.title;

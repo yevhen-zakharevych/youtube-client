@@ -19,6 +19,7 @@ export class PublicationStatusDirective implements OnInit {
   ngOnInit(): void {
     const color = this.checkPublicationStatus(this.date);
 
+    // eslint-disable-next-line
     this.el.nativeElement.style.borderBottom = `6px solid ${color}`;
   }
 
