@@ -4,14 +4,13 @@ enum status {
   week = 'green',
   month = 'blue',
   threeMonth = 'yellow',
-  more = 'red'
+  more = 'red',
 }
 
 @Directive({
-  selector: '[appPublicationStatus]'
+  selector: '[appPublicationStatus]',
 })
 export class PublicationStatusDirective implements OnInit {
-
   constructor(private el: ElementRef) {}
 
   @Input('appPublicationStatus') date!: string;
@@ -28,7 +27,7 @@ export class PublicationStatusDirective implements OnInit {
 
     if (diff < 7) {
       return status.week;
-    } else if (diff < 30 ) {
+    } else if (diff < 30) {
       return status.month;
     } else if (diff < 180) {
       return status.threeMonth;
@@ -39,8 +38,16 @@ export class PublicationStatusDirective implements OnInit {
 
   daysBetween(second: Date): number {
     const first = new Date();
-    const one = new Date(first.getFullYear(), first.getMonth(), first.getDate());
-    const two = new Date(second.getFullYear(), second.getMonth(), second.getDate());
+    const one = new Date(
+      first.getFullYear(),
+      first.getMonth(),
+      first.getDate()
+    );
+    const two = new Date(
+      second.getFullYear(),
+      second.getMonth(),
+      second.getDate()
+    );
 
     const millisecondsPerDay = 1000 * 60 * 60 * 24;
     const millisBetween = one.getTime() - two.getTime();

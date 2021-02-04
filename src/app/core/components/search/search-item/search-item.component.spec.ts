@@ -4,16 +4,14 @@ import { SearchItemComponent } from './search-item.component';
 
 import { response } from '../../../../MOCK.response';
 
-
 describe('SearchItemComponent', () => {
   let component: SearchItemComponent;
   let fixture: ComponentFixture<SearchItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchItemComponent ]
-    })
-    .compileComponents();
+      declarations: [SearchItemComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

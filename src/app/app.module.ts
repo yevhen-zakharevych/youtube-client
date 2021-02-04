@@ -10,18 +10,15 @@ import { CoreModule } from './core/core.module';
 import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginPageComponent,
-  ],
+  declarations: [AppComponent, LoginPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -14,13 +14,12 @@ const components = [
   SortBarComponent,
   SearchItemComponent,
   SearchResultsComponent,
-  MainNavComponent
+  MainNavComponent,
 ];
 
 @NgModule({
   declarations: components,
   imports: [SharedModule],
-  exports: components
+  exports: components,
 })
-
-export class CoreModule { }
+export class CoreModule {}

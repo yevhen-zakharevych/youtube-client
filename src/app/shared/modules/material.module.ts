@@ -16,12 +16,12 @@ const materilalModules = [
   MatListModule,
   MatFormFieldModule,
   MatInputModule,
-  MatCardModule
+  MatCardModule,
 ];
 
 @NgModule({
   declarations: [],
   imports: materilalModules,
-  exports: materilalModules
+  exports: materilalModules,
 })
-export class MaterialModule { }
+export class MaterialModule {}

@@ -1,18 +1,15 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport
-    [opened]="false">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [opened]="false">
     <mat-toolbar color="primary">
       <span>Menu</span>
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
-        (click)="drawer.toggle()">
+        (click)="drawer.toggle()"
+      >
         <mat-icon aria-label="Side nav toggle icon">clear</mat-icon>
-    </button>
+      </button>
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Link 1</a>
@@ -22,14 +19,14 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
+      <!-- <button
         class="menu-open-button"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
+      </button> -->
       <span>YouTube Client</span>
       <div class="search-block">
         <app-logo></app-logo>
@@ -39,23 +36,21 @@
           color="warn"
           type="button"
           class="sort-bar-button"
-          (click)="toggleSortBar()">
-            <mat-icon>sort</mat-icon>
+          (click)="toggleSortBar()"
+        >
+          <mat-icon>sort</mat-icon>
         </button>
       </div>
       <div class="auth">
-        <span>
-          Your name
-        </span>
-        <span class="material-icons">
-          person
-        </span>
+        <span> Your name </span>
+        <span class="material-icons"> person </span>
       </div>
     </mat-toolbar>
     <mat-toolbar color="primary" *ngIf="showSortBar">
       <app-sort-bar
-        (sort)="sort=$event"
-        (filter)="filter=$event"></app-sort-bar>
+        (sort)="sort = $event"
+        (filter)="filter = $event"
+      ></app-sort-bar>
     </mat-toolbar>
     <app-search-results [sort]="sort" [filter]="filter"></app-search-results>
   </mat-sidenav-content>

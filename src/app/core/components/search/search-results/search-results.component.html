@@ -1,6 +1,9 @@
 <div class="search-results-list">
   <app-search-item
-    *ngFor="let item of searchResults | filterBy : filter | sortBy : sort.key : sort.order "
-    [item]="item">
+    *ngFor="
+      let item of searchResults | filterBy: filter | sortBy: sort.key:sort.order
+    "
+    [item]="item"
+  >
   </app-search-item>
 </div>

@@ -4,10 +4,9 @@ import { Sort } from 'src/app/core/models/sort.model';
 @Component({
   selector: 'app-sort-bar',
   templateUrl: './sort-bar.component.html',
-  styleUrls: ['./sort-bar.component.scss']
+  styleUrls: ['./sort-bar.component.scss'],
 })
 export class SortBarComponent {
-
   @Output() sort = new EventEmitter<Sort>();
   @Output() filter = new EventEmitter<string>();
 
@@ -24,7 +23,7 @@ export class SortBarComponent {
 
     this.sort.emit({
       key,
-      order: this.sortOrder
+      order: this.sortOrder,
     });
   }
 

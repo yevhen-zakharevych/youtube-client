@@ -6,21 +6,14 @@ import { SortByPipe } from './pipes/sort-by.pipe';
 import { FilterByPipe } from './pipes/filter-by.pipe';
 
 @NgModule({
-  declarations: [
-    PublicationStatusDirective,
-    SortByPipe,
-    FilterByPipe
-  ],
-  imports: [
-    CommonModule,
-    MaterialModule
-  ],
+  declarations: [PublicationStatusDirective, SortByPipe, FilterByPipe],
+  imports: [CommonModule, MaterialModule],
   exports: [
     CommonModule,
     MaterialModule,
     PublicationStatusDirective,
     SortByPipe,
-    FilterByPipe
-  ]
+    FilterByPipe,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
